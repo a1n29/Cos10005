@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8" > 
+  <meta name="description" content="Web development" > 
+  <meta name="keywords"    content="HTML (Part 2)" > 
+  <meta name="author"      content="Tran Hoang Hai Anh" > 
+  <title>Web Development Survey</title> 
+</head> 
+<body>
+  <a href="https://www.swinburne.edu.au/"><img src="logo.png"></a>
+    <fieldset>
+        <legend>-- Page 2 --</legend>
+    <form id="survey" method="post" 
+          action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"> 
+  <p><label>Full Name (optional) 
+     <input type="text" name="fname" size="20" > 
+  </label></p> 
+  <p>Gender<br /> 
+    <label>Male 
+    <input type="radio" name="gender" value="M" ></label> 
+    <label>Female 
+    <input type="radio" name="gender" value="F" ></label> 
+  </p> 
+  <p>
+    <label for="degree-program">Choose a degree program:</label>
+    <select name="degree-program" id="degree-program">
+    <option value="">Please select</option>
+    <option value="it">IT</option>
+    <option value="muiltimedia">Muiltimedia</option>
+    <option value="design">Design</option>
+    </select>
+  </p>
+  <p><input type="submit" value="Test" > 
+     <input type="reset" value="Reset" > 
+  </p> 
+</form> 
+</fieldset>
+</body>
+<footer>
+    <a href="survey1.html">Prev</a>
+    <a href="survey3.html">Next</a>
+</footer>
+</html>
