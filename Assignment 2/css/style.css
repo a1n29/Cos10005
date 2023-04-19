@@ -1,0 +1,409 @@
+/* set the main theme for body */
+body {
+    background-color: lightpink;
+    background-size: cover ;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 80px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* set the logo on main nav bar */
+header img { 
+    height: 80px;
+    margin-left: 40px;
+}
+/* set the nav bar */
+header {
+    background-color:lightsalmon;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 lightyellow;
+    justify-content: space-around;
+    margin: auto;
+    z-index: 100;
+}
+/* set the nav bar on main nav bar */
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+}
+/* highlight current selected page */
+header  a.current {
+    color: #d68438;
+}
+/* effect when hovering over a nav bar option */
+header a::before, a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: orangered ;
+    transition: 0.5s;
+}
+
+header a::after {
+    left: 0;
+    bottom: -10px;
+}
+
+header a::before {
+    right: 0;
+    top: -10px;
+}
+
+header a:hover:after, a:hover:before {
+    width: 100%;
+}
+/* Set the text color to a light blue */
+h2 {
+  color: #4ECDC4;
+  text-align: center;
+}
+/* Add a text-shadow effect */
+h2 {
+  text-shadow: 2px 2px 2px #FF6B6B;
+}
+/* Add a hover effect with a rotation animation */
+h2:hover {
+  transform: rotate(5deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+/* styling the main paragraph on the index page with some shake effect when hovering on */
+#intro p {
+    color: #774181; 
+    font-size: 25px;
+    font-weight: 400; 
+    line-height: 24px;
+    text-align: center;
+    border: solid darkmagenta;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#intro p:hover {
+  box-shadow: 0 0 50px darkgoldenrod;
+  transition: box-shadow 0.3s ease-in-out;
+  animation: shake 30s ease infinite;
+}
+/* effect when hovering over an image */
+.index_img {
+  max-width: 1280px;
+  max-height: 769px;
+  border: 4px solid #F4A8B0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  filter: grayscale(50%);
+  transition: all 0.3s ease;
+  margin: 3rem 5rem 3rem 5rem;
+}
+
+.index_img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+/* side nav bar */
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    background-color:rgba(248, 215, 218, 0.8);
+    padding: 10px;
+    z-index: 9999;
+  }
+  
+  .sidebar h3 {
+    color: #C0392B;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #C0392B;
+    color: #fff;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333; /* change to your desired text color */
+  }
+  /* styling the form */
+form {
+    background-color: #FCE4EC;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  label {
+    display: inline;
+    margin-bottom: 5px;
+    color: #AA77FF;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #FFF;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #FF69B4;
+    border: none;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #FF1493;
+  }
+  /* style the footer */
+  footer {
+    background-color: #ffe6e6; 
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #location h3 {
+    font-size: 1.2em;
+    color: #333; 
+    margin-bottom: 10px;
+  }
+  
+  #location p {
+    font-size: 1em;
+    color: #555; 
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    font-size: 0.8em;
+    color: #777; 
+    margin-top: 10px;
+  }
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* slider for 6 ice cream images */
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    margin-left: 18rem;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+}
+
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+    max-width: 20rem;
+    display: inline-block;
+    border: solid 10px transparent;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.images input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+#img5:checked ~ .m5 {
+  margin-left: -400%;
+}
+#img6:checked ~ .m6 {
+  margin-left: -500%;
+}
+
+.menu {
+  display: flex ;
+}
+
+  /* Style for the price and flavour table */
+  .menu {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: #FF1493;
+  }
+  
+  .menu th {
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu tr {
+    border: 1px solid #ddd;
+  }
+  
+  .menu td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu td:nth-child(2) {
+    text-align: right;
+  }
+  
+  .menu tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .menu tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+/* Style the feature page */
+ul.features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.features li {
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+ul.features li a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul.features li a:hover {
+  color: #ff69b4;
+}
+
+ul.features li:nth-child(2),
+ul.features li:nth-child(3) {
+  background-color: #ffe6e6;
+  border: 1px solid #ff69b4;
+}

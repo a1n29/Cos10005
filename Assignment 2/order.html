@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Tran Hoang Hai Anh" content="Icecream">
+    <title>Order</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+       <nav>
+       <ul class="topmenu"> <!--This is my main nav bar-->
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="registration.html">SIGN UP</a></li>
+        <li><a class="current" href="order.html">ORDER HERE !</a></li>
+        <li><a href="features.html">FEATURES !</a></li>
+       </ul>
+      </nav>
+    </header>
+    <main><!--This is i created my form for order purpose-->
+          <form  method="post" action="http://mercury.swin.edu.au/it000000/formtest.php" onsubmit="return validateorder()"  >
+            <h2>Place your order here :</h2> <br>
+            <label>Delivery or Pickup:</label><br>
+            <input type="radio" id="pickup" name="delivery-pickup" value="pickup" onclick="checkDeliveryAddress()" >
+            <label for="pickup">Pickup</label><br>
+            <input type="radio" id="delivery" name="delivery-pickup" value="delivery" onclick="checkDeliveryAddress()" >
+            <label for="delivery">Delivery</label><br><br>           
+            <div hidden id="hidden1">
+            <label>Delivery Address:</label><br>
+            <input type="text" name="delivery-address" id="delivery-address"  ><br>
+            </div>
+            <label for="postcode">Postcode: </label><br>
+            <input type="text" name="postcode" id="postcode"><br><br>
+            <label for="billing-address">Billing Address:</label><br>
+            <input type="text" id="billing-address" name="billing-address" class="required"><br>
+            <label for="sameaddress">Same Address:</label><br>
+            <input type="checkbox" id="sameaddress" name="sameaddress" onclick="copy()" ><br><br>
+            <label for="contact-number">Contact Number:</label><br>
+            <input type="text" id="contact-number" name="contact-number" class="required"><br><br>
+            
+            <label for="email">Email for Receipt:</label><br>
+            <input type="email" id="email" name="email" class="required"><br>
+            
+            <label for="pay-on-pickup">Pay on Pickup or Online:</label><br>
+            <input type="radio" id="pay-on-pickup" name="pay-option" value="pickup" onclick="checkCreditCard()" >
+            <label for="pay-on-pickup">Pay on Pickup</label><br>
+            <input type="radio" id="pay-online" name="pay-option" value="online" onclick="checkCreditCard()">
+            <label for="pay-online">Pay Online</label><br><br>
+            <div hidden id="hidden2">
+              <label>Choose a credit card type</label>
+              <input type="radio" id="visa" name="card-type" value="Visa" checked >
+              <label>Visa</label>
+              <input type="radio" id="mastercard" name="card-type" value="Mastercard" >
+              <label>Mastercard</label>
+              <input type="radio" id="amex" name="card-type" value="American-Express" >
+              <label>American Express</label>
+              <br>
+            <label>Credit Card Information:</label><br>
+            <input type="text" name="credit-card-info" id="credit-card-info"><br><br>
+            </div>
+            <input type="submit" name="submit" value="Submit" >
+            </form>
+          <aside class="sidebar"> <!--This is my side nav bar--> 
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="registration.html">SIGN UP</a></li>
+              <li><a href="order.html">ORDER HERE !</a></li>
+              <li><a href="features.html">FEATURES !</a></li>
+          </ul>
+          </aside>
+    </main>
+    <footer>
+      <article id="location">
+        <h3>Location</h3>
+        <p>35 Trang Tien, Hoan Kiem, Hanoi</p>
+      </article>  
+      <p>Made by Tran Hoang Hai Anh</p>
+    </footer>
+</body>
+</html>
