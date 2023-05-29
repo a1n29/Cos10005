@@ -1,0 +1,275 @@
+/*background with animation */
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+/*navigation bar with animation*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #D5CEA3;
+    margin: auto;
+    font-size: 1.9em;
+}
+.navbar ul{
+	display: flex;
+	width: 100%;
+	height: 30vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+}
+.navbar li {
+	padding: 0.25rem 2rem 0.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+	min-width: 80px;
+	margin: auto;
+}
+.navbar li:hover {
+  border-radius: 25px;
+  box-shadow: 0 0 50px lightblue;
+  transition: 0.2s ease-in-out;
+  background-color: cyan;
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+.navbar li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+/*=====Page 1 =====*/
+hr {
+    color: aliceblue;
+}
+#logo {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    max-width: 10vw;
+}
+h1,h2{
+    position: relative;
+    padding: 5%;
+    border: solid #09f;
+    margin-top: 5% ;
+    margin-bottom: 5%;
+    color: darkorchid;
+    font-size: 3em;
+    text-align: center;
+}
+#section_1 p{
+    border: solid #09f;
+    position: relative;
+    padding: 1%;
+    color: rgb(196, 108, 0);
+    font-size: 1.5em;
+    display: inline-block;
+    margin-left: 5%;
+}
+#section_1 img{
+    border: solid #09f;
+    position: relative;
+    margin-left: 5%;
+    top: 3vh
+}
+#section_2 ol{
+    border: solid #09f;
+    position: relative;
+    padding: 1%;
+    color: rgb(97, 53, 0);
+    font-size: 1.5em;
+    display: inline-block;
+    margin-left: 35%;
+}
+#section_2 img{
+    border: solid #09f;
+    position: relative;
+    margin-left: 10%;
+    top: 3vh
+}
+#section_3 ul{
+  border: solid #09f;
+  position: relative;
+  padding: 1%;
+  color: rgb(78, 43, 0);
+  font-size: 1.5em;
+  display: inline-block;
+  margin-left: 35%;
+}
+#section_3 img{
+  border: solid #09f;
+  position: relative;
+  margin-left: 10%;
+  top: 3vh;
+  max-width: 640px;
+  max-height: 480px;
+}
+.game_img {
+  position: relative;
+  border: solid #09f;
+  margin: 1%;
+  left: 20%;
+}
+#valo_img {
+  margin-bottom: 5%;
+}
+aside{
+  width: 15%;
+  color: rgb(255, 0, 0);
+  position: fixed;
+  left: 85%;
+  top: 20%;
+  background-color: #ef816c;
+  text-align: center;
+  font-size: large;
+}
+.footer a{
+  position:relative;
+}
+.footer p{
+  text-align: center;
+  margin: auto;
+  color: red;
+}
+/*===== Page 2 =====*/ 
+.myhometown p {
+  color: rgb(145, 80, 0);
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-size: 3em;
+}
+.myhometown img{
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 30%;
+}
+#history_pic {
+  margin-left: 30%;
+}
+#food_pic{
+  max-width: 640px;
+  margin-left: 30%;
+}
+#section_4 ul{
+  border: solid #09f;
+  position: relative;
+  padding: 1%;
+  color: rgb(151, 83, 0);
+  font-size: 1.5em;
+  display: inline-block;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+#oldquarter_pic{
+  max-width: 725px;
+  margin-bottom: 5%;
+}
+/*===== Page 3 =====*/ 
+table,td,th {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid lightcoral;
+  text-align: center;
+  background-color: #fafad2;
+}
+.timetable img {
+  margin-top: 5%;
+  margin-left: 50%;
+  margin-bottom: 5%;
+}
+form {
+  background-color: rgb(237, 219, 199);
+	border-style: solid ;
+	position: relative;
+	text-align: center;
+	display: inline;
+	float: left;
+	color: rgb(128, 99, 68);
+  font-size: 1.5em;
+  top: 300px;
+  left: 300px
+}
+/*===== Page 4 =====*/
+#my_ani{
+  font-size: 2.5em;
+  color: #f75332;
+  text-align: center;
+  margin: 0 30% 0 30%;
+} 
